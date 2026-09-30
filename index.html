@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Mehraj | B.Tech Cyber Security & Web Developer</title>
+    <!-- Google Fonts: Inter for UI, Fira Code for code blocks & terminal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons for high-quality professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS Linkage -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>SecDev<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Icon for Mobile Menu -->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-container container grid">
+                <div class="hero-data">
+                    <span class="hero-greeting animate-fade">System.out.println("Hello, World!");</span>
+                    <h1 class="hero-title animate-fade">Hi, I'm <span class="gradient-text">Mohammed Mehraj</span></h1>
+                    <div class="typewriter-container">
+                        <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description animate-fade">
+                        Combining robust secure coding principles with modern web technologies to build highly performant, resilient, and visually stunning digital experiences.
+                    </p>
+                    <div class="hero-buttons animate-fade">
+                        <a href="#projects" class="btn btn-primary">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Custom Neon Glowing Terminal Profile Avatar -->
+                <div class="hero-img-container animate-fade">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-card glass">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">~/user_profile</span>
+                        </div>
+                        <div class="avatar-wrapper">
+                            <i class="fa-solid fa-user-shield avatar-placeholder"></i>
+                        </div>
+                        <div class="avatar-info">
+                            <span class="info-tag">SEC_AUTH_OK</span>
+                            <span class="info-id">NODE_0x7F2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fa-solid fa-chevron-down scroll-icon"></i>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid grid">
+                    <div class="about-card glass reveal-on-scroll">
+                        <div class="card-header-icon">
+                            <i class="fa-solid fa-fingerprint icon-cyan"></i>
+                        </div>
+                        <h3>Professional Identity</h3>
+                        <p>
+                            I am a B.Tech Cyber Security student dedicated to building defensive, secure software while crafting fluid, intuitive web layouts. I look at coding through a security lens, ensuring every system built is defensive by default.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass reveal-on-scroll">
+                        <div class="card-header-icon">
+                            <i class="fa-solid fa-graduation-cap icon-purple"></i>
+                        </div>
+                        <h3>Education Background</h3>
+                        <p>
+                            Currently pursuing my Bachelor of Technology (B.Tech) with an emphasis on Cyber Security at Malla Reddy Engineering College For Women. Highly active in competitive programming (DSA), cybersecurity challenges, and secure web application development.
+                        </p>
+                    </div>
+
+                    <div class="about-card glass reveal-on-scroll">
+                        <div class="card-header-icon">
+                            <i class="fa-solid fa-rocket icon-cyan"></i>
+                        </div>
+                        <h3>Career Vision</h3>
+                        <p>
+                            Aiming to secure challenging internship positions as an Application Security Engineer or Web Developer. I love finding vulnerabilities, optimizing critical algorithm architectures, and designing elegant front-ends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Progress Bars -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section-title">My Toolkit</h2>
+                <div class="skills-wrapper grid">
+                    
+                    <!-- Cyber Security Skills Card -->
+                    <div class="skills-card glass reveal-on-scroll">
+                        <h3 class="category-title"><i class="fa-solid fa-shield-halved text-cyan"></i> Cyber Security</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Network Security & Pentesting</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-cyan" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Vulnerability Assessment (OWASP Top 10)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-cyan" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages Card -->
+                    <div class="skills-card glass reveal-on-scroll">
+                        <h3 class="category-title"><i class="fa-solid fa-code text-purple"></i> Languages</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-purple" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C Programming</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-purple" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development Card -->
+                    <div class="skills-card glass reveal-on-scroll">
+                        <h3 class="category-title"><i class="fa-solid fa-laptop-code text-cyan"></i> Web Development</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 / CSS3 (Semantic & Grid)</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-cyan" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript (Vanilla ES6+)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-cyan" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Computer Science Card -->
+                    <div class="skills-card glass reveal-on-scroll">
+                        <h3 class="category-title"><i class="fa-solid fa-brain text-purple"></i> Core CS</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Structures & Algorithms (DSA)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-purple" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Object Oriented Programming</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill fill-purple" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+                <div class="projects-grid grid">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card glass reveal-on-scroll">
+                        <div class="project-img-area">
+                            <div class="project-badge">Cyber Security</div>
+                            <i class="fa-solid fa-network-wired project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sentinel Intrusion Detector</h3>
+                            <p>A lightweight packet sniffing and analysis tool written in Python. Automatically alerts administrators on detecting anomalous patterns such as SYN floods or port scans.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scapy</span>
+                                <span class="tech-tag">Sockets</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live Demo</a>
+                                <a href="#" class="project-btn repo-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card glass reveal-on-scroll">
+                        <div class="project-img-area">
+                            <div class="project-badge">Cryptography</div>
+                            <i class="fa-solid fa-vault project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>SecureVault Vault</h3>
+                            <p>A highly secure local password manager leveraging industry-standard AES-256 GCM encryption and PBKDF2 hashing techniques. Designed in Python and integrated with a sleek UI.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Cryptography</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live Demo</a>
+                                <a href="#" class="project-btn repo-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card glass reveal-on-scroll">
+                        <div class="project-img-area">
+                            <div class="project-badge">Web Dev & DSA</div>
+                            <i class="fa-solid fa-route project-icon"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>AlgoVisual Pathfinding Tool</h3>
+                            <p>An interactive, highly responsive web-based visualizer showing the exact flow of sorting algorithms (Quick/Merge Sort) and pathfinding algorithms (Dijkstra's & A* Search).</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3 Grid</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-btn demo-btn"><i class="fa-solid fa-bolt"></i> Live Demo</a>
+                                <a href="#" class="project-btn repo-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Timeline Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education & Milestones</h2>
+                <div class="timeline">
+                    
+                    <!-- Timeline Node 1: B.Tech -->
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">2025 - 2029</span>
+                            <h3>B.Tech in Computer Science Engineering (Cyber Security)</h3>
+                            <h4>Malla Reddy Engineering College For Women</h4>
+                            <p class="timeline-details">
+                                Specialising in network defense systems, secure software paradigms, object-oriented principles, and advanced cryptographic techniques.
+                                <br><strong class="highlight">CGPA: 8.3 / 10.0 (Current)</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 2: Intermediate -->
+                    <div class="timeline-item right reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">2023 - 2025</span>
+                            <h3>Intermediate Education</h3>
+                            <h4>Resonance Junior College</h4>
+                            <p class="timeline-details">
+                                Highly focused on core analytical sciences: Mathematics, Physics, and Chemistry (MPC).
+                                <br><strong class="highlight">Score: 91.9%</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 3: 10th Grade -->
+                    <div class="timeline-item left reveal-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass">
+                            <span class="timeline-date">Passed 2023</span>
+                            <h3>Secondary School Certificate (Class X)</h3>
+                            <h4>Sri Chaitanya E-Techno School</h4>
+                            <p class="timeline-details">
+                                Built solid mathematical foundations, logical reasoning, and primary science skills.
+                                <br><strong class="highlight">CGPA: 9.3 / 10.0</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-grid grid">
+                    
+                    <!-- Left: Interactive Form -->
+                    <div class="contact-card glass reveal-on-scroll">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Collaboration / Job Opportunity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-submit-btn">Send Secure Message <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Connect details & Social anchors -->
+                    <div class="connect-info-wrapper reveal-on-scroll">
+                        <div class="info-item glass">
+                            <i class="fa-solid fa-envelope info-icon cyan-shadow"></i>
+                            <div>
+                                <h4>Primary Email</h4>
+                                <p>mohammedmehraj1008@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item glass">
+                            <i class="fa-solid fa-location-dot info-icon purple-shadow"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-card glass">
+                            <h3>Cryptographic Identity & Socials</h3>
+                            <div class="social-icons">
+                                <a href="https://github.com" target="_blank" class="social-icon-btn github" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" class="social-icon-btn linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://instagram.com" target="_blank" class="social-icon-btn instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Custom Micro-Interaction Toast Message -->
+    <div id="toast" class="toast-message glass">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <div>
+            <h4>Message Sent Successfully</h4>
+            <p>Your packet was received. I'll get back to you shortly!</p>
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-info">
+                <h3>Mohammed Mehraj</h3>
+                <p>Securing the future, styling the present.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 Mohammed Mehraj. Built from scratch with clean code.</p>
+        </div>
+    </footer>
+
+    <!-- Script Injection -->
+    <script src="script.js"></script>
+</body>
+</html>
